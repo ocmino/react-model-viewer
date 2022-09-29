@@ -17,7 +17,7 @@ const style = {
   right: "0",
   bottom: "10%",
   margin: "auto",
-  
+  alignItems: "center",
 };
 
 

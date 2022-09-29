@@ -4,15 +4,6 @@ import React from "react";
 import "@google/model-viewer";
 
 function Shoe() {
-  //create style for model-viewer
-  const style = {
-    width: "100%",
-    height: "100vh",
-    backgroundColor: "black",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
 
   return (
     <model-viewer

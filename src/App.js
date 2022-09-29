@@ -5,7 +5,9 @@ import Shoe from "./Models/Shoe/Shoe";
 function App() {
   return (
     <div className="App">
-      <Shoe />
+      <div>
+        <Shoe />
+      </div>
     </div>
   );
 }

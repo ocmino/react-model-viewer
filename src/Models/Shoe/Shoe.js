@@ -22,7 +22,6 @@ function Shoe() {
         height: "100vh",
         margin: "auto",
         screen: "cover",
-
       }}
     ></model-viewer>
 

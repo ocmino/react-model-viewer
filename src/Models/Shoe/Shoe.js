@@ -2,10 +2,11 @@
 
 import React from "react";
 import "@google/model-viewer";
+import styles from "./Shoe.module.css";
 
 function Shoe() {
   return (
-    <model-viewer
+    <model-viewer className={styles.shoe}
       src="Assets/shoe.glb"
       alt="A 3D model of an astronaut"
       ar

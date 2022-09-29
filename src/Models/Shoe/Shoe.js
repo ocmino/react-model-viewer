@@ -10,12 +10,10 @@ const style = {
   width: "100%",
   height: "100vh",
   background: "transparent",
-  width: "50%",
   top: "50%",
   left: "50%",
-  transform: "translate(-50%, -50%)",
+  transform: "translate(-50%, -65%)",
   position: "absolute",
-  zIndex: "1",
   
 };
 

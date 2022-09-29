@@ -2,11 +2,20 @@
 
 import React from "react";
 import "@google/model-viewer";
-import styles from "./Shoe.module.css";
 
 function Shoe() {
+  //create style for model-viewer
+  const style = {
+    width: "100%",
+    height: "100vh",
+    backgroundColor: "black",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
   return (
-    <model-viewer className={styles.shoe}
+    <model-viewer
       src="Assets/shoe.glb"
       alt="A 3D model of an astronaut"
       ar
@@ -16,7 +25,10 @@ function Shoe() {
       shadow-intensity="1"
       environment-image="neutral"
       exposure="1"
-      style={{ width: "100%", height: "100vh" }}
+      style={{
+        width: "100%",
+        height: "100vh"
+      }}
     ></model-viewer>
   );
 }

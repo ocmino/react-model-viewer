@@ -17,28 +17,28 @@ const style = {
   right: "0",
   bottom: "10%",
   margin: "auto",
-  alignItems: "center",
 };
 
 
 
-
   return (
+    <>
     <model-viewer
       src="Assets/shoe.glb"
       alt="A 3D model of an astronaut"
       ar
       ar-modes="scene-viewer quick-look webxr"
       ar-scale="auto"
+      ar-placement="floor"
       camera-controls
       auto-rotate
       shadow-intensity="1"
       environment-image="neutral"
       exposure="1"
-      style={style}
-    
-       
+      style={style}  
     ></model-viewer>
+    
+    </>
 
     
   );

@@ -71,10 +71,13 @@ const buttonStyle = {
         style={style}
       ></model-viewer>
       <button style={buttonStyle}
-
+      //view in ar onClick with ar-scale, ar-placement, ar-modes
       onClick={() => {
         const modelViewer = document.querySelector("model-viewer");
-        modelViewer?.setAttribute("ar", true);
+        modelViewer.setAttribute("ar", true);
+        modelViewer.setAttribute("ar-scale", "auto");
+        modelViewer.setAttribute("ar-placement", "floor");
+        modelViewer.setAttribute("ar-modes", "scene-viewer quick-look webxr");
       }}
       >View in AR</button>
     </div>

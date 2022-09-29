@@ -12,8 +12,8 @@ const style = {
   background: "transparent",
   top: "50%",
   left: "50%",
-  transform: "translate(-50%, -65%)",
-  position: "absolute",
+  transform: "translate(-50%, -0%)",
+
   
 };
 

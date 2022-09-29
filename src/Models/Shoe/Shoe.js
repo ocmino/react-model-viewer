@@ -19,11 +19,28 @@ const style = {
   margin: "auto",
 };
 
+const buttonStyle = {
+  position: "absolute",
+  top: "50%",
+  left: "0",
+  right: "0",
+  bottom: "0",
+  margin: "auto",
+  width: "150px",
+  height: "100px",
+  background: "transparent",
+  border: "none",
+  color: "black",
+  fontSize: "20px",
+  fontWeight: "bold",
+  cursor: "pointer",
+};
+
 
 
   return (
-    <>
-    <model-viewer
+
+   /*  <model-viewer
       src="Assets/shoe.glb"
       alt="A 3D model of an astronaut"
       ar
@@ -36,9 +53,27 @@ const style = {
       environment-image="neutral"
       exposure="1"
       style={style}  
-    ></model-viewer>
+    ></model-viewer> */
+
+    <div>
+      <model-viewer
+        src="Assets/shoe.glb"
+        alt="A 3D model of an astronaut"
+        ar
+        ar-modes="scene-viewer quick-look webxr"
+        ar-scale="auto"
+        ar-placement="floor"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        environment-image="neutral"
+        exposure="1"
+        style={style}
+      ></model-viewer>
+      <button style={buttonStyle}>View in AR</button>
+    </div>
     
-    </>
+  
 
     
   );

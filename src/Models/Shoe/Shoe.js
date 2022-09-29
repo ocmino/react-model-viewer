@@ -10,13 +10,9 @@ const style = {
   width: "100%",
   height: "100vh",
   background: "transparent",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  position: "absolute",
-
-  
 };
+
+
 
 
   return (
@@ -32,6 +28,7 @@ const style = {
       environment-image="neutral"
       exposure="1"
       style={style}
+    
        
     ></model-viewer>
 

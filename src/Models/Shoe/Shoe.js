@@ -70,7 +70,12 @@ const buttonStyle = {
         exposure="1"
         style={style}
       ></model-viewer>
-      <button style={buttonStyle}>View in AR</button>
+      <button style={buttonStyle}
+        ar
+        ar-modes="scene-viewer quick-look webxr"
+        ar-scale="auto"
+        ar-placement="floor"
+      >View in AR</button>
     </div>
     
   

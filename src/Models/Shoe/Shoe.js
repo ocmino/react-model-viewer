@@ -28,7 +28,7 @@ const buttonStyle = {
   margin: "auto",
   width: "150px",
   height: "100px",
-  background: "transparent",
+  background: "gray",
   border: "none",
   color: "black",
   fontSize: "20px",
@@ -59,10 +59,6 @@ const buttonStyle = {
       <model-viewer
         src="Assets/shoe.glb"
         alt="A 3D model of an astronaut"
-        ar
-        ar-modes="scene-viewer quick-look webxr"
-        ar-scale="auto"
-        ar-placement="floor"
         camera-controls
         auto-rotate
         shadow-intensity="1"
@@ -71,13 +67,14 @@ const buttonStyle = {
         style={style}
       ></model-viewer>
       <button style={buttonStyle}
-      //view in ar onClick with ar-scale, ar-placement, ar-modes
+      //view in ar onClick with ar-scale, ar-placement, ar-modes, camera-controls, auto-rotate, shadow-intensity, environment-image, exposure
       onClick={() => {
         const modelViewer = document.querySelector("model-viewer");
         modelViewer.setAttribute("ar", true);
         modelViewer.setAttribute("ar-scale", "auto");
         modelViewer.setAttribute("ar-placement", "floor");
         modelViewer.setAttribute("ar-modes", "scene-viewer quick-look webxr");
+
       }}
       >View in AR</button>
     </div>

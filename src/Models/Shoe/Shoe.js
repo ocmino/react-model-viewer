@@ -9,7 +9,7 @@ function Shoe() {
       src="Assets/shoe.glb"
       alt="A 3D model of an astronaut"
       ar
-      ar-modes="webxr scene-viewer quick-look"
+      ar-modes="scene-viewer quick-look webxr"
       camera-controls
       auto-rotate
       shadow-intensity="1"
